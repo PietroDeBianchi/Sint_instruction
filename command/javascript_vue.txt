@@ -1,0 +1,16 @@
+# COMANDI TERMINALE VITE
+
+## Creazione di un progetto VITE + VUE
+
+*T `cd Desktop` // Spostati sul desktop
+*T `npm create vite@latest ` // Crea progetto con vite e seleziona framework Vue, Javascript Vanilla + Nome progetto
+* `npm i` // Installa dipendeze npm nel folder node_modules
+* `npm run dev` // Avvia hosting vite
+
+## Installazione dipendenze da eseguire dopo CMD `npm i`
+
+* `npm i -D sass` // Installare Sass
+* `npm i -D axios` // Installare Axios
+* `npm i -D bootstrap` // Installare Bootstrap
+* `npm i vue router@4` // Installa router view
+

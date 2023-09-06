@@ -1,0 +1,40 @@
+# COMANDI TERMINALE LARAVEL
+
+## Creazione di un progetto Laravel
+
+*T `composer create-project --prefer-dist laravel/laravel NOME-PROGETTO "9.*"` // Creazione progetto laravel
+* `composer require laravel/breeze:^1 --dev (:^1 facoltativo)` // Scarica il pacchetto breeze
+* `php artisan breeze:install` // Installa breeze
+* `composer require pacificdev/laravel_9_preset` // Download preset con vite e bootstrap
+* `php artisan preset:ui bootstrap --auth` //Scelgi la user interface con bootstrap e scss
+
+## Creazione di un modello, controller e Request
+
+* `php artisan make:model MyModel -rcms` // (rc='resource controller' m='migration' s='seeder') crea classe model
+* `php artisan make:controller Folder/NomeController` // Creare classe e file controller convenzione nome->(PageController)
+* `php artisan make:controller --resource NomeController` // Creare classe e file controller con pre-impostate le funzioni CRUD e le rotte di gestione per la nostra classe (nel file WEB.PHP)
+* `php artisan make:request NomeClasseRequest` // Esegui nuovo formato di request personalizzato
+
+## Migrazioni
+
+* `php artisan migrate` // Esegue migrazioni ancora non eseguite 
+* `php artisan migrate:rollback` // Downgrade migrazione dell ultima esecuzione in blocco
+* `php artisan migrate:reset` // Csancella TUTTE le migrazioni (danger)
+* `php artisan make:migration create_nome_al_plurale_table` // Crea migrazione
+* `php artisan make:migration update_users_table --table=users` // Aggiorna migrazione
+* `php artisan make:migration add_phone_number_to_users_table` // Aggiungi colonna
+
+## Seeders
+
+* `php artisan make:seeder UsersTableSeeder` // Creare file seeder in database/seeds, nome PascalCase, crea classe extends Seeder
+* `php artisan db:seed` // Esegui il run() di tutti i seeder
+* `php artisan db:seed --class=NomeClasseSeeder` // Esegui il run() del seeder specifico
+
+## Altri comandi
+
+* `php artisan serve` // Avvia hosting laravel
+* `php artisan storage:link` // Link storage/app/public to Public/Storage
+* `php artisan route:list` // lista delle "rotte"
+* `php artisan key:generate` // Generazione key file .ENV
+* `php artisan help make:controller` // lista funzionalità controller/terminal
+
