@@ -3,8 +3,6 @@
 
 SINGOLARE: nome Classe / PLURALE: nome Tabella, nome Resource URI, nome folder Resources/Views/NomeFolderAlPlurale
 
-
-
 SINTASSI SPECIALI
 
 RIFERIRTI A CONTROLLER NELLA ROUTE

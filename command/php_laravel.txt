@@ -4,8 +4,8 @@
 
 *T `composer create-project --prefer-dist laravel/laravel NOME-PROGETTO "9.*"` // Creazione progetto laravel
 * `composer require laravel/breeze:^1 --dev (:^1 facoltativo)` // Scarica il pacchetto breeze
-* `php artisan breeze:install` // Installa breeze
-* `composer require pacificdev/laravel_9_preset` // Download preset con vite e bootstrap
+* `php artisan breeze:install` // Installa breeze (installa blade) 
+* `composer require pacificdev/laravel_9_preset` // Download preset dipendenze con vite e bootstrap
 * `php artisan preset:ui bootstrap --auth` //Scelgi la user interface con bootstrap e scss
 
 ## Creazione di un modello, controller e Request
