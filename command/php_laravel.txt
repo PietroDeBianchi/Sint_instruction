@@ -10,7 +10,7 @@
 
 ## Creazione di un modello, controller e Request
 
-* `php artisan make:model MyModel -rcms` // (rc='resource controller' m='migration' s='seeder') crea classe model
+* `php artisan make:model MyModel (-rcms)` // (rc='resource controller' m='migration' s='seeder') crea classe model
 * `php artisan make:controller Folder/NomeController` // Creare classe e file controller convenzione nome->(PageController)
 * `php artisan make:controller --resource NomeController` // Creare classe e file controller con pre-impostate le funzioni CRUD e le rotte di gestione per la nostra classe (nel file WEB.PHP)
 * `php artisan make:request NomeClasseRequest` // Esegui nuovo formato di request personalizzato
