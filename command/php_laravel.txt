@@ -20,9 +20,9 @@
 * `php artisan migrate` // Esegue migrazioni ancora non eseguite 
 * `php artisan migrate:rollback` // Downgrade migrazione dell ultima esecuzione in blocco
 * `php artisan migrate:reset` // Csancella TUTTE le migrazioni (danger)
-* `php artisan make:migration create_nome_al_plurale_table` // Crea migrazione
+* `php artisan make:migration create_nome_al_singolare_due_table` // Crea migrazione
 * `php artisan make:migration update_users_table --table=users` // Aggiorna migrazione
-* `php artisan make:migration add_phone_number_to_users_table` // Aggiungi colonna
+* `php artisan make:migration add_category_id_to_users_table` // Aggiungi migrazione ID x vincolo relazione tabelle
 
 ## Seeders
 
@@ -33,8 +33,15 @@
 ## Altri comandi
 
 * `php artisan serve` // Avvia hosting laravel
-* `php artisan storage:link` // Link storage/app/public to Public/Storage
+* `php artisan storage:link` // Link storage/app/public to Public/Storage for fileupload
 * `php artisan route:list` // lista delle "rotte"
 * `php artisan key:generate` // Generazione key file .ENV
 * `php artisan help make:controller` // lista funzionalità controller/terminal
+* `composer dump-autoload` // Mapping all the Autoload files
 
+## Percorso costruzione DataBase
+
+TABELLE
+->RELAZIONI TRA TABELLE(migrations) and php artisan migrate (aggiungere colonna)
+->CREAZIONE TABELLA PIVOT(solo many-to-many relation)php artisan make:migration create_
+->RELAZIONI MODELLI(models)
